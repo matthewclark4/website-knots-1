@@ -7,7 +7,7 @@ function setup() {
 }
 
 function draw() {
-	background(211, 211, 211);
+	background(223, 223, 223);
 	
 	push();
 	rotateY(angle);
@@ -22,7 +22,7 @@ strokeWeight(0.9);
 	beginShape(POINTS);
 	noFill();
 	while (beta < PI) {
-		let r = 60 * (0.8 + 1.6 * sin(6 * beta));
+		let r = 60 * (0.2 + 1.1 * sin(6 * beta));
 		let theta = 2 * beta;
 		let phi = 0.6 * PI * sin(12 * beta);
 		let x = r * cos(phi) * cos(theta);
